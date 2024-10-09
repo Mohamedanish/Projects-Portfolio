@@ -396,6 +396,8 @@ body {
 @media (max-width: 768px) {
     .project-grid{
         flex-direction: column; /* Stack links vertically */
+         padding: 10px; /* Padding around grid */
+         gap: 20px
     }
     .navbar div {
         font-size: 1.2em; /* Adjust font size for title */
