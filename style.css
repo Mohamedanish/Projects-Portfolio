@@ -405,7 +405,7 @@ body {
     }
     .project {
         width: auto; /* Full width on smaller screens */
-        margin: 15px;/* sets margin for smaller screen */
+        margin: 10px;/* sets margin for smaller screen */
     }
     .resume, .contact, .profile {
         width: 80%; /* Wider on smaller screens */
