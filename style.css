@@ -394,13 +394,13 @@ body {
 }
 
 @media (max-width: 768px) {
-    .links {
+    .project-grid{
         flex-direction: column; /* Stack links vertically */
         padding-left: 0; /* Remove left padding */
     }
     .navbar div {
         font-size: 1.2em; /* Adjust font size for title */
-        text-align: center; /* Center title */
+        text-align: start; /* Center title */
     }
     .project {
         width: 100%; /* Full width on smaller screens */
@@ -408,6 +408,16 @@ body {
     .resume, .contact, .profile {
         width: 80%; /* Wider on smaller screens */
         left: 10%; /* Center it */
+    }
+    .links{
+        flex-wrap: wrap;
+        width: auto;
+    }
+    .links li{
+        padding-left: 10px;
+    }
+    .navbar div{
+        width: auto;
     }
 }
 
@@ -423,5 +433,10 @@ body {
     }
     .footer p {
         font-size: 0.9rem; /* Smaller font size */
+    }
+}
+@media (min-width: 769px) {
+    .project-grid {
+        flex-direction: row; /* Display project cards in a row on larger screens */
     }
 }
