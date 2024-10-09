@@ -404,8 +404,9 @@ body {
         text-align: start; /* Center title */
     }
     .project {
-        width: 100%; /* Full width on smaller screens */
-        margin-left:5px;
+        width: auto; /* Full width on smaller screens */
+        margin: 20px;/* sets margin for smaller screen */
+        margin-right: 10px; /* reduce right margin */
     }
     .resume, .contact, .profile {
         width: 80%; /* Wider on smaller screens */
