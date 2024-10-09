@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive settings -->
+    <meta charset="UTF-8"> <!-- Sets the character encoding to UTF-8 for compatibility with different characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design across devices -->
+    <title>Projects</title> <!-- Title that appears in the browser tab -->
+    
+    <!-- External stylesheets -->
+    <!-- Font Awesome for icons like close button -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <!-- Link to the external custom CSS file for styling the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section containing the navigation bar -->
+    <header class="headerbox">
+        <nav class="navbar">
+            <div>Stage</div> <!-- Website/Brand title -->
+            <!-- Navigation links for Profile, Resume, and Contact Info sections -->
+            <ul class="links">
+                <li id="prof">Profile</li> <!-- Profile button/link -->
+                <li id="res">Resume</li> <!-- Resume button/link -->
+                <li id="cont">Contact info</li> <!-- Contact info button/link -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main section containing the introductory text -->
+    <section class="container">
+        <div class="contentbox">
+            <!-- Main heading for the site -->
+            <h1>Stage</h1>
+            <!-- Brief description or tagline -->
+            <h5>Stage your work, showcase your skills and keep improving.</h5>
+        </div>
+    </section>
+
+    <!-- Section containing the project grid with project details and links -->
+    <section class="project-grid">
+            <div class="project">
+                <!-- Project 1: link to the hosted project, with image as thumbnail -->
+                <a href="https://mohamedanish.github.io/P1-Home-page/" target="_blank"> 
+                    <img src="Homepage.jpeg" alt="Homepage thumbnail"> <!-- Project 1 image -->
+                </a>
+                <h2>Project 1</h2> <!-- Project title -->
+                <p>Basic Home page.</p> <!-- Short project description -->
+            </div>
+            
+            <div class="project">
+                <!-- Project 2: link to the hosted project -->
+                <a href="https://mohamedanish.github.io/P2-Form-design/" target="_blank">
+                    <img src="Form.jpeg" alt="Form thumbnail"> <!-- Project 2 image -->
+                </a>
+                <h2>Project 2</h2> <!-- Project title -->
+                <p>Basic Form design.</p> <!-- Short project description -->
+            </div>
+            
+            <div class="project">
+                <!-- Project 3: link to the hosted project -->
+                <a href="https://mohamedanish.github.io/P3-Parallax-wesite/" target="_blank">
+                    <img src="Parallax.jpeg" alt="Parallax thumbnail"> <!-- Project 3 image -->
+                </a>
+                <h2>Project 3</h2> <!-- Project title -->
+                <p>Parallax website design.</p> <!-- Short project description -->
+            </div>
+            
+            <div class="project">
+                <!-- Project 4: link to the hosted project -->
+                <a href="https://mohamedanish.github.io/P4-Guess-the-number/" target="_blank">
+                    <img src="Game.jpeg" alt="Game thumbnail"> <!-- Project 4 image -->
+                </a>
+                <h2>Project 4</h2> <!-- Project title -->
+                <p>Basic game design.</p> <!-- Short project description -->
+            </div>
+            
+            <div class="project">
+                <!-- Project 5: link to the hosted project -->
+                <a href="https://mohamedanish.github.io/P5-To-do-list/" target="_blank">
+                    <img src="To-do.jpeg" alt="To-do thumbnail"> <!-- Project 5 image -->
+                </a>
+                <h2>Project 5</h2> <!-- Project title -->
+                <p>To-do List.</p> <!-- Short project description -->
+            </div>
+    </section>
+
+    <!-- Footer section with project declaration -->
+    <footer class="footer">
+        <p>Created on @2024</p> <!-- Year of creation -->
+        <!-- Declaration stating that the content is authentic -->
+        <h5>"I hereby declare that the project and details provided above are accurate to the best of my knowledge and represent my own work. This website is solely intended to showcase my current skills and track ongoing improvements."</h5>
+    </footer>
+
+    <!-- Modal for Profile section -->
+    <div class="profile-overlay"></div> <!-- Overlay for darkening background when modal is open -->
+    <div class="profile">
+        <button id="profileclose"><i class="fa fa-close"></i></button> <!-- Close button with Font Awesome icon -->
+        <!-- Profile description -->
+        <p>I am Mohamed Anish, a motivated graduate with a specialization in Information Technology, actively seeking a role that will enhance my skills, expand my professional profile, and support my growth both personally and professionally. I am currently focused on developing my expertise in frontend development and am committed to delivering my best efforts in all endeavors. Thank you for taking the time to consider my profile.</p>
+    </div>
+
+    <!-- Modal for Resume section -->
+    <div class="resume-overlay"></div> <!-- Overlay for the resume modal -->
+    <div class="resume">
+        <button id="resumeclose"><i class="fa fa-close"></i></button> <!-- Close button for resume modal -->
+        <!-- Image of the resume -->
+        <img src="resume.jpeg" alt="resumeimage">
+    </div>
+
+    <!-- Modal for Contact Info section -->
+    <div class="contact-overlay"></div> <!-- Overlay for the contact modal -->
+    <div class="contact">
+        <button id="contactclose"><i class="fa fa-close"></i></button> <!-- Close button for contact modal -->
+        <!-- Contact details: Email, LinkedIn, Github, and Mobile -->
+        <p>Email </p> 
+        <a href="mailto:mr.mohamedanish@gmail.com">mr.mohamedanish@gmail.com</a> <!-- Email link -->
+        <p>LinkedIn </p> 
+        <a href="https://www.linkedin.com/in/mohamed-anish-b55149245" target="_blank">LinkedIn</a> <!-- LinkedIn profile link -->
+        <p>Github </p> 
+        <a href="https://github.com/Mohamedanish?tab=repositories" target="_blank">GitHub</a> <!-- GitHub link -->
+        <p>Mobile </p> 
+        <a href="tel:+9629654793">9629654793</a> <!-- Mobile number link -->
+    </div>
+
+    <!-- External JavaScript file for handling modal functionality -->
+    <script src="script.js"></script>
+</body>
+</html>

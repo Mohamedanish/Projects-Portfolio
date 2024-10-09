@@ -1,0 +1,427 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Body styling */
+body {
+    background-color: rgb(255, 255, 255); /* White background color */
+    color: black; /* Default text color */
+    background-image: url('https://img.freepik.com/free-photo/laptop-office-plant-black-background-top-view_169016-34505.jpg?w=740&t=st=1728489371~exp=1728489971~hmac=84b55dd2341c8f2666a9fab31727ad5ad899cef51d292db8b0e07fce5fcfcab1'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+}
+
+/* Header box styling */
+.headerbox {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    padding: 20px; /* Padding around the header */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex; /* Flexbox layout for navbar */
+    justify-content: space-between; /* Space between navbar items */
+    align-items: center; /* Vertically center items */
+}
+
+/* Links styling */
+.links {
+    list-style-type: none; /* Remove bullet points from list */
+    display: flex; /* Flexbox for horizontal layout */
+    width: 50%; /* Width of the links container */
+    margin: 0; /* Remove margin */
+    padding-left: 350px; /* Left padding */
+}
+
+/* Individual link styling */
+.links li {
+    padding-left: 70px; /* Space between links */
+    font-size: 0.8em; /* Font size */
+    transition-property: all; /* Transition effect */
+    transition-duration: 0.5s; /* Transition duration */
+    text-decoration: none; /* No underline */
+    color: white; /* Link color */
+    font-weight: bold; /* Bold text */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family */
+}
+
+/* Navbar title styling */
+.navbar div {
+    font-size: 1.5em; /* Font size for title */
+    font-family: monospace; /* Monospace font family */
+    width: 50%; /* Width of title area */
+    text-align: start; /* Align text to start */
+}
+
+/* Main container for content */
+.container {
+    height: 80vh; /* 80% of the viewport height */
+    display: flex; /* Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Content box styling */
+.contentbox {
+    text-align: center; /* Center align text */
+    color: white; /* Text color */
+    animation: fadeIn 5s ease-out; /* Fade-in animation */
+}
+
+/* Main heading styling */
+.contentbox h1 {
+    font-size: 6rem; /* Large font size for heading */
+    margin-bottom: 20px; /* Bottom margin */
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Font family */
+}
+
+/* Subheading styling */
+.contentbox h5 {
+    font-size: 1.5rem; /* Font size for subheading */
+    margin-bottom: 20px; /* Bottom margin */
+    font-family: BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* Font family */
+}
+
+/* Project grid styling */
+.project-grid {
+    display: flex; /* Flexbox layout */
+    padding: 20px; /* Padding around grid */
+    gap: 20px; /* Space between project items */
+    justify-content: center; /* Center items */
+}
+
+/* Individual project styling */
+.project {
+    border-radius: 10px; /* Rounded corners */
+    background-color: white; /* White background */
+    text-align: center; /* Center align text */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Hide overflow */
+    color: black; /* Text color */
+    width: 300px; /* Fixed width */
+    animation: fadeIn 5s ease-out; /* Fade-in animation */
+}
+
+/* Project image styling */
+.project img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Project title styling */
+.project h2 {
+    margin: 15px 0 10px; /* Margins for title */
+    font-size: 1.5rem; /* Font size */
+}
+
+/* Project description styling */
+.project p {
+    font-size: 1rem; /* Font size */
+    color: #555; /* Gray color */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Footer styling */
+.footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    padding: 7px; /* Padding */
+    color: white; /* Text color */
+    text-align: center; /* Center align text */
+}
+
+/* Footer heading styling */
+.footer h5 {
+    font-size: 0.9em; /* Font size */
+    margin-bottom: 10px; /* Bottom margin */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Font family */
+    font-weight: 100; /* Light weight */
+}
+
+/* Footer paragraph styling */
+.footer p {
+    color: rgb(27, 85, 245); /* Blue color */
+    font-size: 1rem; /* Font size */
+    text-decoration: underline; /* Underline text */
+    margin-bottom: 20px; /* Bottom margin */
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* Start invisible */
+        transform: translateY(20px); /* Move down */
+    }
+    100% {
+        opacity: 1; /* End fully visible */
+        transform: translateY(0); /* Original position */
+    }
+}
+
+/* Profile overlay styling */
+.profile-overlay {
+    background-color: black; /* Black background */
+    opacity: 0.8; /* Semi-transparent */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 1; /* Layering */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Profile popup styling */
+.profile {
+    background-color: white; /* White background */
+    width: 20%; /* Fixed width */
+    padding: 10px; /* Padding */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute; /* Absolute positioning */
+    top: 20%; /* Position it vertically */
+    left: 40%; /* Center it horizontally */
+    z-index: 2; /* Above overlay */
+    margin: 0; /* No margin */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Close button styling for profile */
+#profileclose {
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    left: 93%; /* Align to the right */
+    position: relative; /* Relative positioning */
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 5px 7px; /* Padding */
+    font-size: 10px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Profile text styling */
+.profile p {
+    text-align: center; /* Center align text */
+    font-family: 'Times New Roman', Times, serif; /* Font family */
+    color: black; /* Text color */
+    font-size: 1.2em; /* Font size */
+    margin: 10px; /* Margin */
+    overflow: hidden; /* Hide overflow */
+}
+
+/* Active state for profile overlay */
+.profile-overlay.active {
+    opacity: 0.7; /* Make visible */
+    visibility: visible; /* Show overlay */
+}
+
+/* Active state for profile popup */
+.profile.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Show profile */
+}
+
+/* Resume overlay styling */
+.resume-overlay {
+    background-color: black; /* Black background */
+    opacity: 0.8; /* Semi-transparent */
+    height: 130%; /* Full height */
+    width: 100%; /* Full width */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 1; /* Layering */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Resume popup styling */
+.resume {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    width: 40%; /* Fixed width */
+    padding: 0 5px; /* Horizontal padding */
+    padding-bottom: 8px; /* Bottom padding */
+    padding-top: 2px; /* Top padding */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute; /* Absolute positioning */
+    top: 10%; /* Position it vertically */
+    left: 30%; /* Center it horizontally */
+    z-index: 2; /* Above overlay */
+    margin-top: 2; /* Margin top */
+    overflow: hidden; /* Hide overflow */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Close button styling for resume */
+#resumeclose {
+    margin: 0; /* No margin */
+    padding: 0; /* No padding */
+    left: 93%; /* Align to the right */
+    position: relative; /* Relative positioning */
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 5px 7px; /* Padding */
+    font-size: 10px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Resume image styling */
+.resume img {
+    width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 2px; /* Top margin */
+}
+
+/* Active state for resume overlay */
+.resume-overlay.active {
+    opacity: 0.7; /* Make visible */
+    visibility: visible; /* Show overlay */
+}
+
+/* Active state for resume popup */
+.resume.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Show resume */
+}
+
+/* Contact overlay styling */
+.contact-overlay {
+    background-color: black; /* Black background */
+    opacity: 0.8; /* Semi-transparent */
+    height: 100%; /* Full height */
+    width: 100%; /* Full width */
+    position: absolute; /* Absolute positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    z-index: 1; /* Layering */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Contact popup styling */
+.contact {
+    background-color: white; /* White background */
+    width: 40%; /* Fixed width */
+    padding: 0 10px; /* Horizontal padding */
+    padding-bottom: 8px; /* Bottom padding */
+    padding-top: 2px; /* Top padding */
+    border-radius: 10px; /* Rounded corners */
+    position: absolute; /* Absolute positioning */
+    top: 10%; /* Position it vertically */
+    left: 30%; /* Center it horizontally */
+    z-index: 2; /* Above overlay */
+    margin-top: 2; /* Margin top */
+    overflow: hidden; /* Hide overflow */
+    opacity: 0; /* Initially hidden */
+    visibility: hidden; /* Initially hidden */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+}
+
+/* Close button styling for contact */
+#contactclose {
+    margin: 0; /* No margin */
+    padding-top: 2px; /* Top padding */
+    left: 96%; /* Align to the right */
+    position: relative; /* Relative positioning */
+    background-color: DodgerBlue; /* Blue background */
+    border: none; /* No borders */
+    color: white; /* White text */
+    padding: 5px 7px; /* Padding */
+    font-size: 10px; /* Font size */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Contact text styling */
+.contact p {
+    font-family: sans-serif; /* Font family */
+    font-size: 0.8em; /* Font size */
+    text-align: justify; /* Justify text */
+    overflow: hidden; /* Hide overflow */
+    font-weight: bold; /* Bold text */
+    padding-bottom: 2px; /* Bottom padding */
+    margin-top: 5px; /* Top margin */
+}
+
+/* Contact link styling */
+.contact a {
+    text-decoration: none; /* No underline */
+    color: cornflowerblue; /* Link color */
+    font-family: sans-serif; /* Font family */
+    font-size: 0.8em; /* Font size */
+}
+
+/* Active state for contact overlay */
+.contact-overlay.active {
+    opacity: 0.7; /* Make visible */
+    visibility: visible; /* Show overlay */
+}
+
+/* Active state for contact popup */
+.contact.active {
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Show contact */
+}
+
+/* Hover effect for links */
+.links li:hover {
+    font-size: 1.2em; /* Increase font size on hover */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
+    .links {
+        padding-left: 50px; /* Adjust left padding for smaller screens */
+    }
+    .project {
+        width: 90%; /* Adjust width for smaller screens */
+    }
+    .container {
+        height: auto; /* Allow container height to adjust */
+        padding: 20px; /* Add padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column; /* Stack links vertically */
+        padding-left: 0; /* Remove left padding */
+    }
+    .navbar div {
+        font-size: 1.2em; /* Adjust font size for title */
+        text-align: center; /* Center title */
+    }
+    .project {
+        width: 100%; /* Full width on smaller screens */
+    }
+    .resume, .contact, .profile {
+        width: 80%; /* Wider on smaller screens */
+        left: 10%; /* Center it */
+    }
+}
+
+@media (max-width: 480px) {
+    .contentbox h1 {
+        font-size: 4rem; /* Smaller font size for heading */
+    }
+    .contentbox h5 {
+        font-size: 1.2rem; /* Smaller font size for subheading */
+    }
+    .footer h5 {
+        font-size: 0.8em; /* Smaller font size */
+    }
+    .footer p {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+}
